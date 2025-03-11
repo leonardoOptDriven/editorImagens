@@ -18,7 +18,7 @@ for nome_arquivo in os.listdir(pasta_imagens):
         imagem = Image.open(caminho_arquivo)
         
         # Girar a imagem 15 graus para a esquerda
-        imagem_girada = imagem.rotate(15, expand=True)
+        imagem_girada = imagem.rotate(-14, expand=True)
         
         # Salvar a imagem girada
         caminho_girado = os.path.join(pasta_giradas, nome_arquivo)
